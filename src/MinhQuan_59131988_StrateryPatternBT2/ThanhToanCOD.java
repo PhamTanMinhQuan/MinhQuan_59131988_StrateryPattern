@@ -9,6 +9,17 @@ package MinhQuan_59131988_StrateryPatternBT2;
  *
  * @author quan
  */
-public class ThanhToanCOD {
+public class ThanhToanCOD implements IThanhToan{
+    @Override
+    public double thanhToan(int tienHang){
+        if(tienHang > 2000000)
+        {
+            return 0.02*tienHang;
+        }
+        else
+        {
+            return tienHang;
+        }
+    }
     
 }

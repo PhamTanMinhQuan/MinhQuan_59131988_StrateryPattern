@@ -10,5 +10,5 @@ package MinhQuan_59131988_StrateryPatternBT2;
  * @author quan
  */
 public interface IThanhToan {
-    
+    public double thanhToan(int tienHang);
 }
