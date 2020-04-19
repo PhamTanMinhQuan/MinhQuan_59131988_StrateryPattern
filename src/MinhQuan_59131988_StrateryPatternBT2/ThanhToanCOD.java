@@ -9,6 +9,6 @@ package MinhQuan_59131988_StrateryPatternBT2;
  *
  * @author quan
  */
-public class BT2 {
+public class ThanhToanCOD {
     
 }
