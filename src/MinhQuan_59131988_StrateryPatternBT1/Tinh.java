@@ -9,13 +9,7 @@ package MinhQuan_59131988_StrateryPatternBT1;
  *
  * @author quan
  */
-public class BT1 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public interface Tinh {
+    public float tinh(float a, float b);
+ 
 }
