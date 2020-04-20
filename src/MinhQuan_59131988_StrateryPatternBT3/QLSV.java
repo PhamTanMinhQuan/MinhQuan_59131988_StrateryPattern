@@ -9,6 +9,6 @@ package MinhQuan_59131988_StrateryPatternBT3;
  *
  * @author quan
  */
-public class BT3 {
+public class QLSV {
     
 }
