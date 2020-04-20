@@ -4,11 +4,40 @@
  * and open the template in the editor.
  */
 package MinhQuan_59131988_StrateryPatternBT3;
-
+import java.util.ArrayList;
 /**
  *
  * @author quan
  */
 public class QLSV {
+    private ArrayList<SinhVien> dsSV;
+    private ISoSanh<SinhVien> iSoSanh;
     
+    public void setDsSV(ArrayList<SinhVien> dsSV){
+        this.dsSV = dsSV;
+    }
+    public void setISoSanh(ISoSanh<SinhVien> iSoSanh){
+        this.iSoSanh = iSoSanh;
+    }
+    public void sapXep(){
+        SinhVien temp;
+        int i,j;
+        for(i=0;i<dsSV.size();i++){
+            for(j=i;j<=dsSV.size()-1;j++)
+                if(iSoSanh.soSanh(dsSV.get(i), dsSV.get(j))==1){
+                    temp=dsSV.get(i);
+                    dsSV.set(i, dsSV.get(j));
+                    dsSV.set(j, temp);
+                }
+        }
+    }
+    public void inDS(){
+        int i;
+        for(i = 0;i< dsSV.size(); i++){
+            SinhVien sv= dsSV.get(i);
+            System.out.println(i+1 + ". Ho ten: " + sv.getHoTen() + ", Ngay sinh: " + sv.getNgaySinh() + 
+                                ", Diem TB: " + sv.getDiemTB());
+            
+        }
+    }     
 }

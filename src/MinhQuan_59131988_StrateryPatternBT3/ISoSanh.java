@@ -9,6 +9,6 @@ package MinhQuan_59131988_StrateryPatternBT3;
  *
  * @author quan
  */
-public interface ISoSanh {
-    
+public interface ISoSanh<T> {
+    public int soSanh(T o1, T o2);
 }
